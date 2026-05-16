@@ -579,6 +579,10 @@ github.com/harshitjain0302/medsignal
 
 ## 10. SESSION HANDOFF PROTOCOL
 
+Do not create a git worktree. Work directly in the current directory.
+Always use `python -m` to run scripts, never `python path/to/script.py`.
+The conda environment is `medsignal`. All commands assume it is already activated.
+
 ### Starting a new Claude Code session
 Paste this at the start:
 ```

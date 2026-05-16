@@ -1,0 +1,2120 @@
+2026-05-14 17:05:37,998 INFO Loaded 50 questions from golden set
+2026-05-14 17:05:37,999 INFO 
+============================================================
+Running baseline: naive_rag
+============================================================
+2026-05-14 17:05:37,999 INFO [naive_rag] 1/50: What is the primary outcome measure of the Phase 3 lung canc
+2026-05-14 17:05:42,682 INFO Loading BAAI/bge-m3 — first load takes ~30s
+2026-05-14 17:05:42,682 INFO No device provided, using mps
+2026-05-14 17:05:42,857 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 17:05:42,888 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-05-14 17:05:42,956 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 17:05:42,987 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 17:05:42,989 INFO Loading SentenceTransformer model from BAAI/bge-m3.
+2026-05-14 17:05:43,048 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 17:05:43,079 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 17:05:43,148 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 17:05:43,173 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/README.md "HTTP/1.1 200 OK"
+2026-05-14 17:05:43,249 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 17:05:43,276 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-05-14 17:05:43,346 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 17:05:43,377 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-14 17:05:43,444 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 17:05:43,517 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 17:05:43,556 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-05-14 17:05:43,667 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-05-14 17:05:43,731 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 47039.15it/s]
+2026-05-14 17:05:43,826 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/main "HTTP/1.1 200 OK"
+2026-05-14 17:05:43,916 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 17:05:43,989 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 17:05:44,007 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/discussions?p=0 "HTTP/1.1 200 OK"
+2026-05-14 17:05:44,053 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 17:05:44,103 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/refs%2Fpr%2F130 "HTTP/1.1 200 OK"
+2026-05-14 17:05:44,112 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 17:05:44,167 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-05-14 17:05:44,177 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 17:05:44,206 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 17:05:44,241 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors "HTTP/1.1 302 Found"
+2026-05-14 17:05:44,267 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 17:05:44,306 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-05-14 17:05:44,373 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 17:05:44,410 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-05-14 17:05:44,490 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 17:05:44,527 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 17:05:44,598 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-14 17:05:44,677 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-14 17:05:46,055 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-05-14 17:05:46,126 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 17:05:46,159 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-14 17:05:46,232 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-05-14 17:05:58,997 INFO BGE-M3 loaded on device=mps:0, batch_size=8
+2026-05-14 17:06:04,076 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:06:04,249 INFO Synthesis: confidence=0.574 answer_len=189
+2026-05-14 17:06:05,754 INFO [naive_rag] 2/50: What is the primary endpoint and its timeframe for the Phase
+2026-05-14 17:06:10,906 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:06:10,945 INFO Synthesis: confidence=0.548 answer_len=182
+2026-05-14 17:06:12,452 INFO [naive_rag] 3/50: Which Phase 3 lung cancer trials in the database measured ov
+2026-05-14 17:06:14,715 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:06:14,735 INFO Synthesis: confidence=0.481 answer_len=482
+2026-05-14 17:06:16,240 INFO [naive_rag] 4/50: What is the primary outcome of the Phase 3 melanoma trial NC
+2026-05-14 17:06:18,817 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:06:18,860 INFO Synthesis: confidence=0.572 answer_len=175
+2026-05-14 17:06:20,365 INFO [naive_rag] 5/50: What does the Phase 3 colorectal cancer trial NCT00349076 me
+2026-05-14 17:06:21,942 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:06:21,963 INFO Synthesis: confidence=0.576 answer_len=181
+2026-05-14 17:06:23,469 INFO [naive_rag] 6/50: What is the primary endpoint of the Phase 3 hepatocellular c
+2026-05-14 17:06:24,842 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:06:24,870 INFO Synthesis: confidence=0.554 answer_len=244
+2026-05-14 17:06:26,376 INFO [naive_rag] 7/50: What primary outcome measure is used in the Phase 3 NSCLC tr
+2026-05-14 17:06:27,883 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:06:27,913 INFO Synthesis: confidence=0.558 answer_len=373
+2026-05-14 17:06:29,419 INFO [naive_rag] 8/50: What is the primary endpoint of the Phase 3 chronic lymphocy
+2026-05-14 17:06:31,277 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:06:31,283 INFO Synthesis: confidence=0.572 answer_len=144
+2026-05-14 17:06:32,788 INFO [naive_rag] 9/50: What is the primary outcome of the Phase 3 nasopharyngeal ca
+2026-05-14 17:06:34,483 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:06:34,505 INFO Synthesis: confidence=0.556 answer_len=260
+2026-05-14 17:06:36,011 INFO [naive_rag] 10/50: Which Phase 3 oncology trials measured progression-free surv
+2026-05-14 17:06:37,710 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:06:37,748 INFO Synthesis: confidence=0.516 answer_len=573
+2026-05-14 17:06:39,254 INFO [naive_rag] 11/50: What is the primary outcome of the Phase 3 small cell lung c
+2026-05-14 17:06:41,341 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:06:41,352 INFO Synthesis: confidence=0.562 answer_len=297
+2026-05-14 17:06:42,858 INFO [naive_rag] 12/50: What is the primary endpoint of NCT03867175, the Phase 3 tri
+2026-05-14 17:06:44,521 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:06:44,544 INFO Synthesis: confidence=0.594 answer_len=233
+2026-05-14 17:06:46,049 INFO [naive_rag] 13/50: What drug was used in Phase 3 trial NCT01582672 for renal ce
+2026-05-14 17:06:47,556 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:06:47,601 INFO Synthesis: confidence=0.559 answer_len=140
+2026-05-14 17:06:49,107 INFO [naive_rag] 14/50: What is the primary outcome measure and follow-up period for
+2026-05-14 17:06:50,672 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:06:50,750 INFO Synthesis: confidence=0.596 answer_len=433
+2026-05-14 17:06:52,252 INFO [naive_rag] 15/50: What is the primary endpoint of NCT02531841, the Phase 3 dif
+2026-05-14 17:06:55,781 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:06:56,112 INFO Synthesis: confidence=0.576 answer_len=195
+2026-05-14 17:06:57,618 INFO [naive_rag] 16/50: What primary outcome does the Phase 3 glioblastoma trial NCT
+2026-05-14 17:07:00,174 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:07:00,196 INFO Synthesis: confidence=0.547 answer_len=272
+2026-05-14 17:07:01,701 INFO [naive_rag] 17/50: What primary outcome is used in the Phase 3 acute lymphoblas
+2026-05-14 17:07:04,884 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:07:04,893 INFO Synthesis: confidence=0.539 answer_len=323
+2026-05-14 17:07:06,398 INFO [naive_rag] 18/50: What is the primary endpoint of the Phase 3 pancreatic cance
+2026-05-14 17:07:09,191 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:07:09,209 INFO Synthesis: confidence=0.56 answer_len=193
+2026-05-14 17:07:10,715 INFO [naive_rag] 19/50: What Phase 3 colorectal cancer trials are in the database an
+2026-05-14 17:07:13,399 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:07:13,422 INFO Synthesis: confidence=0.532 answer_len=838
+2026-05-14 17:07:14,927 INFO [naive_rag] 20/50: What is the primary outcome of the Phase 3 head and neck can
+2026-05-14 17:07:16,478 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:07:16,509 INFO Synthesis: confidence=0.575 answer_len=333
+2026-05-14 17:07:18,014 INFO [naive_rag] 21/50: What is the primary endpoint of the Phase 3 oropharyngeal sq
+2026-05-14 17:07:19,744 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:07:19,778 INFO Synthesis: confidence=0.559 answer_len=347
+2026-05-14 17:07:21,283 INFO [naive_rag] 22/50: Which Phase 3 breast cancer trials in the database used a pl
+2026-05-14 17:07:22,846 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:07:22,867 INFO Synthesis: confidence=0.521 answer_len=394
+2026-05-14 17:07:24,372 INFO [naive_rag] 23/50: What is the primary outcome and timeframe for the Phase 3 pr
+2026-05-14 17:07:25,835 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:07:25,850 INFO Synthesis: confidence=0.557 answer_len=340
+2026-05-14 17:07:27,355 INFO [naive_rag] 24/50: What does the Phase 3 multiple myeloma trial NCT02248428 mea
+2026-05-14 17:07:29,063 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:07:29,084 INFO Synthesis: confidence=0.555 answer_len=320
+2026-05-14 17:07:30,589 INFO [naive_rag] 25/50: What is the primary endpoint of the Phase 3 CLL trial NCT069
+2026-05-14 17:07:32,232 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:07:32,263 INFO Synthesis: confidence=0.547 answer_len=198
+2026-05-14 17:07:33,769 INFO [naive_rag] 26/50: What is the primary outcome of the Phase 3 AML trial NCT0723
+2026-05-14 17:07:35,731 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:07:35,759 INFO Synthesis: confidence=0.509 answer_len=179
+2026-05-14 17:07:37,265 INFO [naive_rag] 27/50: Which Phase 3 lung cancer trials used pembrolizumab and what
+2026-05-14 17:07:38,386 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:07:38,388 INFO Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-05-14 17:07:45,138 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:07:45,152 INFO Synthesis: confidence=0.55 answer_len=373
+2026-05-14 17:07:46,657 INFO [naive_rag] 28/50: What is the primary outcome and follow-up duration for the P
+2026-05-14 17:07:48,267 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:07:48,288 INFO Synthesis: confidence=0.585 answer_len=337
+2026-05-14 17:07:49,790 INFO [naive_rag] 29/50: What Phase 3 trials in the database enrolled patients with a
+2026-05-14 17:07:51,692 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:07:51,724 INFO Synthesis: confidence=0.541 answer_len=1029
+2026-05-14 17:07:53,230 INFO [naive_rag] 30/50: What is the primary endpoint of the Phase 3 NSCLC trial NCT0
+2026-05-14 17:07:54,288 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:07:54,290 INFO Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-05-14 17:07:56,445 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:07:56,454 INFO Synthesis: confidence=0.536 answer_len=95
+2026-05-14 17:07:57,959 INFO [naive_rag] 31/50: Which Phase 3 trials measured adverse events as a primary ou
+2026-05-14 17:07:59,148 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:07:59,149 INFO Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-05-14 17:08:01,225 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:08:01,225 INFO Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-05-14 17:08:03,159 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:08:03,179 INFO Synthesis: confidence=0.314 answer_len=571
+2026-05-14 17:08:04,685 INFO [naive_rag] 32/50: What safety outcome does the Phase 3 idiopathic pulmonary fi
+2026-05-14 17:08:06,079 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:08:06,079 INFO Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-05-14 17:08:07,171 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:08:07,199 INFO Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-05-14 17:08:08,286 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:08:08,314 ERROR Groq API error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 10563, Requested 2021. Please try again in 2.92s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-14 17:08:09,819 INFO [naive_rag] 33/50: What primary safety endpoint does NCT00685958 measure in the
+2026-05-14 17:08:11,282 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:08:11,298 INFO Synthesis: confidence=0.511 answer_len=233
+2026-05-14 17:08:12,803 INFO [naive_rag] 34/50: Which Phase 3 oncology trials measured toxicity Grade 3 or h
+2026-05-14 17:08:14,518 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:08:14,547 INFO Synthesis: confidence=0.517 answer_len=223
+2026-05-14 17:08:16,053 INFO [naive_rag] 35/50: What is the primary safety outcome of Phase 3 trial NCT00430
+2026-05-14 17:08:17,655 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:08:17,667 INFO Synthesis: confidence=0.517 answer_len=288
+2026-05-14 17:08:19,172 INFO [naive_rag] 36/50: What interventions were compared in the Phase 3 nasopharynge
+2026-05-14 17:08:20,889 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:08:20,893 INFO Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-05-14 17:08:23,407 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:08:23,451 INFO Synthesis: confidence=0.586 answer_len=219
+2026-05-14 17:08:24,956 INFO [naive_rag] 37/50: What is the design of Phase 3 trial NCT03737981 for chronic 
+2026-05-14 17:08:27,424 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:08:27,427 INFO Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-05-14 17:08:30,504 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:08:30,532 INFO Synthesis: confidence=0.551 answer_len=448
+2026-05-14 17:08:32,038 INFO [naive_rag] 38/50: Which Phase 3 trials compared immunotherapy combinations aga
+2026-05-14 17:08:35,373 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:08:35,385 INFO Synthesis: confidence=0.548 answer_len=875
+2026-05-14 17:08:36,891 INFO [naive_rag] 39/50: What conditions were studied in Phase 3 trial NCT04949113 an
+2026-05-14 17:08:39,128 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:08:39,130 INFO Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-05-14 17:08:40,536 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:08:40,602 INFO Synthesis: confidence=0.516 answer_len=189
+2026-05-14 17:08:42,107 INFO [naive_rag] 40/50: What is the study design of Phase 3 trial NCT01876784 for th
+2026-05-14 17:08:44,518 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:08:44,521 INFO Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-05-14 17:08:45,967 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:08:45,998 INFO Synthesis: confidence=0.523 answer_len=244
+2026-05-14 17:08:47,503 INFO [naive_rag] 41/50: What is the role of pembrolizumab in Phase 3 lung cancer tri
+2026-05-14 17:08:49,274 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:08:49,275 INFO Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-05-14 17:08:51,028 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:08:51,042 INFO Synthesis: confidence=0.536 answer_len=322
+2026-05-14 17:08:52,548 INFO [naive_rag] 42/50: What Phase 3 leukemia trials are present in the database?
+2026-05-14 17:08:53,746 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:08:53,748 INFO Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-05-14 17:08:56,510 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:08:56,550 INFO Synthesis: confidence=0.482 answer_len=360
+2026-05-14 17:08:58,056 INFO [naive_rag] 43/50: Which Phase 3 trials in the database studied checkpoint inhi
+2026-05-14 17:09:00,296 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:09:00,296 INFO Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-05-14 17:09:03,069 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:09:03,094 INFO Synthesis: confidence=0.357 answer_len=679
+2026-05-14 17:09:04,600 INFO [naive_rag] 44/50: What Phase 3 cancer trials measured disease-free survival (D
+2026-05-14 17:09:07,366 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:09:07,370 INFO Synthesis: confidence=0.51 answer_len=358
+2026-05-14 17:09:08,875 INFO [naive_rag] 45/50: What chemotherapy regimens were tested in Phase 3 lung cance
+2026-05-14 17:09:10,740 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:09:10,740 INFO Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-05-14 17:09:12,588 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:09:12,612 INFO Synthesis: confidence=0.525 answer_len=603
+2026-05-14 17:09:14,117 INFO [naive_rag] 46/50: What is the primary outcome of Phase 3 trial NCT05725343 stu
+2026-05-14 17:09:15,922 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:09:15,924 INFO Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-05-14 17:09:23,556 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:09:23,587 INFO Synthesis: confidence=0.576 answer_len=282
+2026-05-14 17:09:25,092 INFO [naive_rag] 47/50: What is the primary endpoint of the Phase 3 bladder cancer t
+2026-05-14 17:09:26,841 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:09:26,852 INFO Synthesis: confidence=0.563 answer_len=284
+2026-05-14 17:09:28,357 INFO [naive_rag] 48/50: What is the primary outcome of the Phase 3 colorectal cancer
+2026-05-14 17:09:29,853 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:09:29,883 INFO Synthesis: confidence=0.573 answer_len=408
+2026-05-14 17:09:31,389 INFO [naive_rag] 49/50: What is the primary endpoint of the Phase 3 renal cell carci
+2026-05-14 17:09:33,685 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:09:33,712 INFO Synthesis: confidence=0.574 answer_len=276
+2026-05-14 17:09:35,217 INFO [naive_rag] 50/50: What Phase 3 trials used ibrutinib and what were the primary
+2026-05-14 17:09:38,851 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:09:38,885 INFO Synthesis: confidence=0.514 answer_len=349
+Evaluating:   0%|          | 0/50 [00:00<?, ?it/s]2026-05-14 17:09:44,666 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:09:44,755 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:09:44,756 INFO Retrying request to /chat/completions in 14.000000 seconds
+2026-05-14 17:09:59,488 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:09:59,568 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:09:59,569 INFO Retrying request to /chat/completions in 3.000000 seconds
+2026-05-14 17:10:02,790 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:10:02,896 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:10:02,976 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:10:03,054 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:10:03,131 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:10:03,132 INFO Retrying request to /chat/completions in 3.000000 seconds
+2026-05-14 17:10:06,655 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:10:06,732 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:10:06,804 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:10:06,897 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:10:07,072 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:10:07,073 INFO Retrying request to /chat/completions in 2.000000 seconds
+2026-05-14 17:10:09,451 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:10:09,556 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:10:09,715 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:10:09,788 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:10:09,883 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:10:09,969 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:10:10,031 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:10:10,105 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:10:10,175 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:10:10,243 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:10:10,243 INFO Retrying request to /chat/completions in 11.000000 seconds
+2026-05-14 17:10:24,375 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:10:24,376 INFO Retrying request to /chat/completions in 52.000000 seconds
+2026-05-14 17:11:16,613 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:16,750 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:16,750 INFO Retrying request to /chat/completions in 34.000000 seconds
+2026-05-14 17:11:51,209 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:11:53,459 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:53,529 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:53,599 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:53,686 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:53,772 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:53,863 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:53,938 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:54,006 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:54,070 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:54,144 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:54,213 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:54,284 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:54,351 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:54,418 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:54,566 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:54,641 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:54,713 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:54,802 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:54,897 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:54,967 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:55,103 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:55,262 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:55,328 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:55,411 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:55,477 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:55,560 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:55,656 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:55,723 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:55,811 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:55,877 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:55,923 ERROR Exception raised in Job[1]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98036, Requested 3986. Please try again in 29m7.007999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98036, Requested 3986. Please try again in 29m7.007999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98036, Requested 3987. Please try again in 29m7.872s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98036, Requested 3987. Please try again in 29m7.872s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:11:55,926 ERROR Exception raised in Job[2]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98742, Requested 4014. Please try again in 39m41.184s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98742, Requested 4014. Please try again in 39m41.184s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98742, Requested 4015. Please try again in 39m42.048s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98742, Requested 4015. Please try again in 39m42.048s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:11:55,929 ERROR Exception raised in Job[3]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99352, Requested 3626. Please try again in 42m52.992s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99352, Requested 3691. Please try again in 43m49.152s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99352, Requested 3691. Please try again in 43m49.152s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99352, Requested 3691. Please try again in 43m49.152s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:11:55,931 ERROR Exception raised in Job[4]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99352, Requested 719. Please try again in 1m1.344s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99352, Requested 719. Please try again in 1m1.344s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99352, Requested 719. Please try again in 1m1.344s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99352, Requested 719. Please try again in 1m1.344s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:11:55,934 ERROR Exception raised in Job[5]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99352, Requested 726. Please try again in 1m7.391999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99352, Requested 726. Please try again in 1m7.391999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99275, Requested 726. Please try again in 864ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99275, Requested 726. Please try again in 864ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:11:55,936 ERROR Exception raised in Job[6]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99939, Requested 3836. Please try again in 54m21.6s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99939, Requested 3835. Please try again in 54m20.736s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99939, Requested 3836. Please try again in 54m21.6s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99939, Requested 3836. Please try again in 54m21.6s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:11:55,938 ERROR Exception raised in Job[7]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99939, Requested 707. Please try again in 9m18.144s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99938, Requested 641. Please try again in 8m20.256s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99938, Requested 708. Please try again in 9m18.144s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99938, Requested 708. Please try again in 9m18.144s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:11:55,940 ERROR Exception raised in Job[8]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99938, Requested 735. Please try again in 9m41.472s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99938, Requested 669. Please try again in 8m44.448s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99938, Requested 669. Please try again in 8m44.448s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99938, Requested 669. Please try again in 8m44.448s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:11:55,942 ERROR Exception raised in Job[9]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99938, Requested 814. Please try again in 10m49.728s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99938, Requested 814. Please try again in 10m49.728s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99938, Requested 815. Please try again in 10m50.592s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99938, Requested 815. Please try again in 10m50.592s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:11:55,945 ERROR Exception raised in Job[10]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99938, Requested 767. Please try again in 10m9.12s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99938, Requested 767. Please try again in 10m9.12s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99938, Requested 768. Please try again in 10m9.984s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99938, Requested 768. Please try again in 10m9.984s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:11:55,947 ERROR Exception raised in Job[11]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99937, Requested 737. Please try again in 9m42.336s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99937, Requested 738. Please try again in 9m43.2s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99937, Requested 737. Please try again in 9m42.336s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99937, Requested 737. Please try again in 9m42.336s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:11:55,949 ERROR Exception raised in Job[12]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99937, Requested 651. Please try again in 8m28.032s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99937, Requested 651. Please try again in 8m28.032s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99937, Requested 717. Please try again in 9m25.056s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99937, Requested 717. Please try again in 9m25.056s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:11:55,952 ERROR Exception raised in Job[13]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99937, Requested 774. Please try again in 10m14.304s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99937, Requested 774. Please try again in 10m14.304s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99937, Requested 707. Please try again in 9m16.416s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99937, Requested 707. Please try again in 9m16.416s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:11:55,954 ERROR Exception raised in Job[14]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99936, Requested 724. Please try again in 9m30.24s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99936, Requested 657. Please try again in 8m32.352s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99936, Requested 724. Please try again in 9m30.24s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99936, Requested 724. Please try again in 9m30.24s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:11:55,956 ERROR Exception raised in Job[15]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99936, Requested 666. Please try again in 8m40.128s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99936, Requested 666. Please try again in 8m40.128s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99936, Requested 732. Please try again in 9m37.152s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99936, Requested 732. Please try again in 9m37.152s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:11:56,025 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:56,095 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:56,261 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+Evaluating:   2%|▏         | 1/50 [02:11<1:47:44, 131.92s/it]2026-05-14 17:11:56,361 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:56,433 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:56,519 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:56,608 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:56,693 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:56,774 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:56,861 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:57,157 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:57,227 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:57,297 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:57,385 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:57,472 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:57,569 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:57,634 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:57,724 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:57,816 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:57,888 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:57,975 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:58,069 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:58,158 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:58,248 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:58,394 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:58,465 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:58,559 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:58,650 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:58,735 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:58,806 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:58,880 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:58,964 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:59,056 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:59,154 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:59,240 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:59,324 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:59,398 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:59,486 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:59,549 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:59,616 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:59,687 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:59,768 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:59,851 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:11:59,921 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:00,004 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:00,096 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:00,186 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:00,355 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:00,366 ERROR Exception raised in Job[16]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99936, Requested 701. Please try again in 9m10.367999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99936, Requested 701. Please try again in 9m10.367999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99936, Requested 768. Please try again in 10m8.256s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99936, Requested 768. Please try again in 10m8.256s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:00,372 ERROR Exception raised in Job[17]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99935, Requested 713. Please try again in 9m19.872s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99935, Requested 713. Please try again in 9m19.872s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99935, Requested 712. Please try again in 9m19.008s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99935, Requested 712. Please try again in 9m19.008s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:00,377 ERROR Exception raised in Job[18]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99935, Requested 877. Please try again in 11m41.568s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99935, Requested 878. Please try again in 11m42.432s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99935, Requested 878. Please try again in 11m42.432s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99935, Requested 878. Please try again in 11m42.432s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:00,382 ERROR Exception raised in Job[19]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99935, Requested 682. Please try again in 8m53.087999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99935, Requested 749. Please try again in 9m50.976s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99934, Requested 682. Please try again in 8m52.223999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99934, Requested 682. Please try again in 8m52.223999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:00,385 ERROR Exception raised in Job[20]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99934, Requested 767. Please try again in 10m5.664s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99934, Requested 767. Please try again in 10m5.664s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99934, Requested 767. Please try again in 10m5.664s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99934, Requested 767. Please try again in 10m5.664s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:00,389 ERROR Exception raised in Job[21]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99934, Requested 779. Please try again in 10m16.032s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99934, Requested 778. Please try again in 10m15.168s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99934, Requested 778. Please try again in 10m15.168s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99934, Requested 778. Please try again in 10m15.168s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:00,392 ERROR Exception raised in Job[22]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99934, Requested 772. Please try again in 10m9.984s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99934, Requested 772. Please try again in 10m9.984s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99934, Requested 773. Please try again in 10m10.848s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99934, Requested 773. Please try again in 10m10.848s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:00,395 ERROR Exception raised in Job[23]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99934, Requested 771. Please try again in 10m9.12s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99933, Requested 704. Please try again in 9m10.367999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99933, Requested 771. Please try again in 10m8.256s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99933, Requested 771. Please try again in 10m8.256s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:00,398 ERROR Exception raised in Job[24]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99933, Requested 716. Please try again in 9m20.736s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99933, Requested 715. Please try again in 9m19.872s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99933, Requested 715. Please try again in 9m19.872s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99933, Requested 715. Please try again in 9m19.872s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:00,401 ERROR Exception raised in Job[25]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99933, Requested 712. Please try again in 9m17.28s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99933, Requested 646. Please try again in 8m20.256s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99933, Requested 712. Please try again in 9m17.28s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99933, Requested 712. Please try again in 9m17.28s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:00,403 ERROR Exception raised in Job[26]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99933, Requested 692. Please try again in 9m0s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99932, Requested 759. Please try again in 9m57.024s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99932, Requested 758. Please try again in 9m56.16s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99932, Requested 758. Please try again in 9m56.16s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:00,405 ERROR Exception raised in Job[27]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99932, Requested 743. Please try again in 9m43.2s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99932, Requested 744. Please try again in 9m44.064s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99932, Requested 677. Please try again in 8m46.176s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99932, Requested 677. Please try again in 8m46.176s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:00,408 ERROR Exception raised in Job[28]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99932, Requested 868. Please try again in 11m31.2s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99932, Requested 868. Please try again in 11m31.2s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99932, Requested 934. Please try again in 12m28.223999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99932, Requested 934. Please try again in 12m28.223999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:00,410 ERROR Exception raised in Job[29]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99932, Requested 702. Please try again in 9m7.776s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99932, Requested 636. Please try again in 8m10.752s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99932, Requested 636. Please try again in 8m10.752s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99932, Requested 636. Please try again in 8m10.752s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:00,412 ERROR Exception raised in Job[30]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99931, Requested 795. Please try again in 10m27.264s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99931, Requested 728. Please try again in 9m29.376s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99931, Requested 728. Please try again in 9m29.376s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99931, Requested 728. Please try again in 9m29.376s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:00,414 ERROR Exception raised in Job[31]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99931, Requested 678. Please try again in 8m46.176s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99931, Requested 612. Please try again in 7m49.152s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99931, Requested 678. Please try again in 8m46.176s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99931, Requested 678. Please try again in 8m46.176s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:00,498 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:00,559 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:00,659 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+Evaluating:  34%|███▍      | 17/50 [02:16<03:11,  5.79s/it]  2026-05-14 17:12:00,732 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:00,829 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:00,901 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:00,986 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:01,058 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:01,146 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:01,222 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:01,316 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:01,389 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:01,475 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:01,572 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:01,660 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:01,750 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:01,908 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:02,000 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:02,099 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:02,163 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:02,278 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:02,361 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:02,445 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:02,535 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:02,614 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:02,702 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:02,852 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:02,923 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:03,013 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:03,098 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:03,195 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:03,284 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:03,376 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:03,447 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:03,510 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:03,585 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:03,661 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:03,753 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:03,829 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:03,910 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:03,982 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:04,056 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:04,154 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:04,225 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:04,294 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:04,370 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:04,437 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:04,503 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:04,513 ERROR Exception raised in Job[32]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99931, Requested 658. Please try again in 8m28.896s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99931, Requested 658. Please try again in 8m28.896s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99930, Requested 724. Please try again in 9m25.056s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99930, Requested 724. Please try again in 9m25.056s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:04,519 ERROR Exception raised in Job[33]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99930, Requested 717. Please try again in 9m19.008s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99930, Requested 717. Please try again in 9m19.008s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99930, Requested 718. Please try again in 9m19.872s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99930, Requested 718. Please try again in 9m19.872s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:04,523 ERROR Exception raised in Job[34]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99930, Requested 737. Please try again in 9m36.288s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99930, Requested 737. Please try again in 9m36.288s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99930, Requested 738. Please try again in 9m37.152s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99930, Requested 738. Please try again in 9m37.152s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:04,527 ERROR Exception raised in Job[35]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99930, Requested 728. Please try again in 9m28.512s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99930, Requested 728. Please try again in 9m28.512s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99930, Requested 728. Please try again in 9m28.512s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99930, Requested 728. Please try again in 9m28.512s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:04,530 ERROR Exception raised in Job[36]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99930, Requested 782. Please try again in 10m15.168s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99929, Requested 781. Please try again in 10m13.44s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99929, Requested 715. Please try again in 9m16.416s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99929, Requested 715. Please try again in 9m16.416s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:04,533 ERROR Exception raised in Job[37]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99929, Requested 856. Please try again in 11m18.239999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99929, Requested 789. Please try again in 10m20.352s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99929, Requested 855. Please try again in 11m17.376s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99929, Requested 855. Please try again in 11m17.376s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:04,536 ERROR Exception raised in Job[38]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99929, Requested 736. Please try again in 9m34.56s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99929, Requested 736. Please try again in 9m34.56s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99929, Requested 669. Please try again in 8m36.672s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99929, Requested 669. Please try again in 8m36.672s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:04,539 ERROR Exception raised in Job[39]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99929, Requested 725. Please try again in 9m25.056s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99928, Requested 658. Please try again in 8m26.304s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99928, Requested 724. Please try again in 9m23.328s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99928, Requested 724. Please try again in 9m23.328s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:04,542 ERROR Exception raised in Job[40]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99928, Requested 758. Please try again in 9m52.704s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99928, Requested 759. Please try again in 9m53.568s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99928, Requested 758. Please try again in 9m52.704s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99928, Requested 758. Please try again in 9m52.704s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:04,545 ERROR Exception raised in Job[41]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99928, Requested 754. Please try again in 9m49.247999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99928, Requested 753. Please try again in 9m48.384s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99928, Requested 687. Please try again in 8m51.36s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99928, Requested 687. Please try again in 8m51.36s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:04,548 ERROR Exception raised in Job[42]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99928, Requested 761. Please try again in 9m55.296s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99927, Requested 828. Please try again in 10m52.32s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99927, Requested 827. Please try again in 10m51.456s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99927, Requested 827. Please try again in 10m51.456s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:04,552 ERROR Exception raised in Job[43]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99927, Requested 758. Please try again in 9m51.84s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99927, Requested 758. Please try again in 9m51.84s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99927, Requested 692. Please try again in 8m54.816s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99927, Requested 692. Please try again in 8m54.816s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:04,555 ERROR Exception raised in Job[44]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99927, Requested 810. Please try again in 10m36.768s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99927, Requested 811. Please try again in 10m37.632s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99927, Requested 810. Please try again in 10m36.768s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99927, Requested 810. Please try again in 10m36.768s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:04,558 ERROR Exception raised in Job[45]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99927, Requested 667. Please try again in 8m33.216s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99927, Requested 667. Please try again in 8m33.216s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99927, Requested 667. Please try again in 8m33.216s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99927, Requested 667. Please try again in 8m33.216s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:04,564 ERROR Exception raised in Job[46]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99926, Requested 661. Please try again in 8m27.168s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99926, Requested 727. Please try again in 9m24.192s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99926, Requested 728. Please try again in 9m25.056s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99926, Requested 728. Please try again in 9m25.056s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:04,572 ERROR Exception raised in Job[47]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99926, Requested 703. Please try again in 9m3.456s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99926, Requested 703. Please try again in 9m3.456s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99926, Requested 703. Please try again in 9m3.456s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99926, Requested 703. Please try again in 9m3.456s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:04,736 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:04,806 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:04,956 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+Evaluating:  66%|██████▌   | 33/50 [02:20<00:44,  2.60s/it]2026-05-14 17:12:05,031 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:05,126 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:05,202 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:05,209 ERROR Exception raised in Job[48]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99926, Requested 736. Please try again in 9m31.968s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99926, Requested 669. Please try again in 8m34.08s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99926, Requested 736. Please try again in 9m31.968s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99926, Requested 736. Please try again in 9m31.968s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+2026-05-14 17:12:05,214 ERROR Exception raised in Job[49]: InstructorRetryException(<failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99925, Requested 753. Please try again in 9m45.791999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99925, Requested 753. Please try again in 9m45.791999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99925, Requested 753. Please try again in 9m45.791999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99925, Requested 753. Please try again in 9m45.791999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+</last_exception>)
+Evaluating:  98%|█████████▊| 49/50 [02:20<00:01,  1.43s/it]Evaluating: 100%|██████████| 50/50 [02:20<00:00,  2.82s/it]
+2026-05-14 17:12:05,323 INFO RAGAS scores: {'faithfulness_mean': 0.5}
+2026-05-14 17:12:05,325 INFO Results saved: /Users/harshit/Documents/Project/medsignal/eval/results/20260514_211205_naive_rag_eval_run.json
+2026-05-14 17:12:07,288 WARNING MLflow logging failed (non-fatal): API request to endpoint /api/2.0/mlflow/experiments/get-by-name failed with error code 403 != 200. Response body: ''
+2026-05-14 17:12:07,289 INFO 
+============================================================
+Running baseline: hybrid_rag
+============================================================
+2026-05-14 17:12:07,289 INFO [hybrid_rag] 1/50: What is the primary outcome measure of the Phase 3 lung canc
+2026-05-14 17:12:18,508 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:18,671 ERROR Groq API error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99910, Requested 1110. Please try again in 14m41.28s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-14 17:12:20,176 INFO [hybrid_rag] 2/50: What is the primary endpoint and its timeframe for the Phase
+2026-05-14 17:12:22,535 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:22,557 ERROR Groq API error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99905, Requested 1161. Please try again in 15m21.023999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-14 17:12:24,063 INFO [hybrid_rag] 3/50: Which Phase 3 lung cancer trials in the database measured ov
+2026-05-14 17:12:25,636 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:25,676 ERROR Groq API error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99902, Requested 1168. Please try again in 15m24.479999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-14 17:12:27,178 INFO [hybrid_rag] 4/50: What is the primary outcome of the Phase 3 melanoma trial NC
+2026-05-14 17:12:28,633 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:28,642 ERROR Groq API error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99898, Requested 1144. Please try again in 15m0.288s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-14 17:12:30,147 INFO [hybrid_rag] 5/50: What does the Phase 3 colorectal cancer trial NCT00349076 me
+2026-05-14 17:12:31,770 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:31,841 ERROR Groq API error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99894, Requested 1137. Please try again in 14m50.784s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-14 17:12:33,366 INFO [hybrid_rag] 6/50: What is the primary endpoint of the Phase 3 hepatocellular c
+2026-05-14 17:12:35,607 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:35,635 ERROR Groq API error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99890, Requested 1181. Please try again in 15m25.344s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-14 17:12:37,140 INFO [hybrid_rag] 7/50: What primary outcome measure is used in the Phase 3 NSCLC tr
+2026-05-14 17:12:39,193 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:39,265 ERROR Groq API error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99886, Requested 1138. Please try again in 14m44.736s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-14 17:12:40,770 INFO [hybrid_rag] 8/50: What is the primary endpoint of the Phase 3 chronic lymphocy
+2026-05-14 17:12:42,240 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:42,263 ERROR Groq API error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99882, Requested 2030. Please try again in 27m31.968s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-14 17:12:43,764 INFO [hybrid_rag] 9/50: What is the primary outcome of the Phase 3 nasopharyngeal ca
+2026-05-14 17:12:45,566 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:45,590 ERROR Groq API error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99879, Requested 1185. Please try again in 15m19.296s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-14 17:12:47,096 INFO [hybrid_rag] 10/50: Which Phase 3 oncology trials measured progression-free surv
+2026-05-14 17:12:53,400 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:53,525 ERROR Groq API error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99869, Requested 1145. Please try again in 14m36.096s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-14 17:12:55,031 INFO [hybrid_rag] 11/50: What is the primary outcome of the Phase 3 small cell lung c
+2026-05-14 17:12:59,901 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:12:59,920 ERROR Groq API error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99862, Requested 1146. Please try again in 14m30.912s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-14 17:13:01,426 INFO [hybrid_rag] 12/50: What is the primary endpoint of NCT03867175, the Phase 3 tri
+2026-05-14 17:13:03,877 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:13:03,945 ERROR Groq API error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99857, Requested 1100. Please try again in 13m46.848s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-14 17:13:05,451 INFO [hybrid_rag] 13/50: What drug was used in Phase 3 trial NCT01582672 for renal ce
+2026-05-14 17:13:10,416 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:13:10,482 ERROR Groq API error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99850, Requested 1992. Please try again in 26m31.487999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-14 17:13:12,034 INFO [hybrid_rag] 14/50: What is the primary outcome measure and follow-up period for
+2026-05-14 17:13:14,662 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:13:14,673 ERROR Groq API error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99845, Requested 1185. Please try again in 14m49.92s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-14 17:13:16,178 INFO [hybrid_rag] 15/50: What is the primary endpoint of NCT02531841, the Phase 3 dif
+2026-05-14 17:13:18,190 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:13:18,202 ERROR Groq API error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99841, Requested 1116. Please try again in 13m46.848s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-14 17:13:19,704 INFO [hybrid_rag] 16/50: What primary outcome does the Phase 3 glioblastoma trial NCT
+2026-05-14 17:13:24,413 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:13:24,521 ERROR Groq API error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01krabxpx1fk2btgayq9kr3hfr` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99834, Requested 1137. Please try again in 13m58.944s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-14 17:13:26,026 INFO [hybrid_rag] 17/50: What primary outcome is used in the Phase 3 acute lymphoblas

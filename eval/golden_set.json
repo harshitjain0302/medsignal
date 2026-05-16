@@ -1,0 +1,402 @@
+[
+  {
+    "id": "stat_001",
+    "category": "statistical",
+    "query": "What is the primary outcome measure of the Phase 3 lung cancer trial NCT00003317?",
+    "ground_truth_answer": "The primary outcome of NCT00003317 (a Phase 3 lung cancer trial using carboplatin and paclitaxel) is overall survival, measured up to 5 years.",
+    "relevant_nct_ids": ["NCT00003317"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_002",
+    "category": "statistical",
+    "query": "What is the primary endpoint and its timeframe for the Phase 3 thyroid cancer trial NCT01876784?",
+    "ground_truth_answer": "The primary endpoint of NCT01876784 (vandetanib vs. placebo in differentiated thyroid cancer) is Progression-Free Survival (PFS), measured from randomization until disease progression.",
+    "relevant_nct_ids": ["NCT01876784"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_003",
+    "category": "statistical",
+    "query": "Which Phase 3 lung cancer trials in the database measured overall survival as the primary outcome?",
+    "ground_truth_answer": "Phase 3 lung cancer trials measuring overall survival include NCT00003317 (carboplatin + paclitaxel, up to 5 years) and NCT00801736 (cisplatin + paclitaxel, with completion Dec 2014).",
+    "relevant_nct_ids": ["NCT00003317", "NCT00801736"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_004",
+    "category": "statistical",
+    "query": "What is the primary outcome of the Phase 3 melanoma trial NCT02993315 and what is the measurement timeframe?",
+    "ground_truth_answer": "The primary outcome of NCT02993315 (nDC vaccination vs. placebo in melanoma) is recurrence-free survival rate, measured at 2 years.",
+    "relevant_nct_ids": ["NCT02993315"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_005",
+    "category": "statistical",
+    "query": "What does the Phase 3 colorectal cancer trial NCT00349076 measure as its primary outcome and over what time period?",
+    "ground_truth_answer": "NCT00349076 (5-FU + oxaliplatin vs. 5-FU in rectal neoplasms) measures disease-free survival at 3 years, defined as the interval from randomization to local or distant recurrence.",
+    "relevant_nct_ids": ["NCT00349076"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_006",
+    "category": "statistical",
+    "query": "What is the primary endpoint of the Phase 3 hepatocellular carcinoma trial NCT01108705?",
+    "ground_truth_answer": "The primary endpoint of NCT01108705 (brivanib vs. placebo in advanced HCC after sorafenib progression) is overall survival, measured every 6 weeks for an average of 6 months.",
+    "relevant_nct_ids": ["NCT01108705"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_007",
+    "category": "statistical",
+    "query": "What primary outcome measure is used in the Phase 3 NSCLC trial NCT01058902 comparing aspirin versus no aspirin?",
+    "ground_truth_answer": "NCT01058902 (aspirin 75mg vs. no aspirin in non-small cell lung cancer) measures survival (alive or dead) as the primary outcome, assessed at 5 years.",
+    "relevant_nct_ids": ["NCT01058902"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_008",
+    "category": "statistical",
+    "query": "What is the primary endpoint of the Phase 3 chronic lymphocytic leukemia trial NCT03737981?",
+    "ground_truth_answer": "The primary endpoint of NCT03737981 (ibrutinib + obinutuzumab in chronic lymphocytic leukemia) is progression-free survival (PFS), measured over 5 years.",
+    "relevant_nct_ids": ["NCT03737981"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_009",
+    "category": "statistical",
+    "query": "What is the primary outcome of the Phase 3 nasopharyngeal carcinoma trial NCT01540136?",
+    "ground_truth_answer": "NCT01540136 (nedaplatin vs. cisplatin in nasopharyngeal carcinoma) measures progress-free survival as the primary outcome, over 2 years.",
+    "relevant_nct_ids": ["NCT01540136"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_010",
+    "category": "statistical",
+    "query": "Which Phase 3 oncology trials measured progression-free survival (PFS) as their primary endpoint?",
+    "ground_truth_answer": "Phase 3 trials with PFS as primary endpoint include NCT01876784 (thyroid cancer, vandetanib), NCT03737981 (CLL, ibrutinib + obinutuzumab), NCT03117335 (advanced NSCLC, Sulijia), NCT04012606 (small cell lung cancer, toripalimab), and NCT01540136 (nasopharyngeal carcinoma, nedaplatin vs. cisplatin).",
+    "relevant_nct_ids": ["NCT01876784", "NCT03737981", "NCT03117335", "NCT04012606", "NCT01540136"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_011",
+    "category": "statistical",
+    "query": "What is the primary outcome of the Phase 3 small cell lung cancer trial NCT04012606?",
+    "ground_truth_answer": "NCT04012606 (toripalimab + carboplatin/cisplatin + etoposide in small cell lung cancer) measures PFS (Progression Free Survival) by investigator as the primary outcome.",
+    "relevant_nct_ids": ["NCT04012606"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_012",
+    "category": "statistical",
+    "query": "What is the primary endpoint of NCT03867175, the Phase 3 trial of pembrolizumab in metastatic lung cancer?",
+    "ground_truth_answer": "NCT03867175 (stereotactic body radiation therapy plus pembrolizumab in metastatic lung cancer) measures number of participants with progression-free survival (PFS) after combined treatment as the primary outcome.",
+    "relevant_nct_ids": ["NCT03867175"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_013",
+    "category": "statistical",
+    "query": "What drug was used in Phase 3 trial NCT01582672 for renal cell carcinoma and what was the primary endpoint?",
+    "ground_truth_answer": "NCT01582672 (AGS-003 vs. standard treatment in advanced renal cell carcinoma) measured overall survival from date of subject randomization as the primary endpoint.",
+    "relevant_nct_ids": ["NCT01582672"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_014",
+    "category": "statistical",
+    "query": "What is the primary outcome measure and follow-up period for the Phase 3 esophageal squamous cell carcinoma trial NCT01740375?",
+    "ground_truth_answer": "NCT01740375 (esophagectomy in esophageal squamous cell carcinoma) measures 2-year disease-free survival (DFS) rate, with follow-up of 2 years from enrollment of the last patient.",
+    "relevant_nct_ids": ["NCT01740375"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_015",
+    "category": "statistical",
+    "query": "What is the primary endpoint of NCT02531841, the Phase 3 diffuse large B-cell lymphoma trial?",
+    "ground_truth_answer": "NCT02531841 (DEIC vs. BEAM conditioning in diffuse large B-cell lymphoma) measures progression-free survival (PFS) as the primary outcome, defined as time from randomization to progression or death.",
+    "relevant_nct_ids": ["NCT02531841"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_016",
+    "category": "statistical",
+    "query": "What primary outcome does the Phase 3 glioblastoma trial NCT02511405 measure?",
+    "ground_truth_answer": "NCT02511405 (VB-111 + bevacizumab vs. bevacizumab alone in glioblastoma) measures overall survival as the primary endpoint, from date of study entry.",
+    "relevant_nct_ids": ["NCT02511405"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_017",
+    "category": "statistical",
+    "query": "What primary outcome is used in the Phase 3 acute lymphoblastic leukemia trial NCT00816049?",
+    "ground_truth_answer": "NCT00816049 (individualized vs. fixed 6-mercaptopurine dosing in acute lymphoblastic leukemia) measures the fraction of patients who become MRD-negative at treatment days 85 and/or 92, over 6 years.",
+    "relevant_nct_ids": ["NCT00816049"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_018",
+    "category": "statistical",
+    "query": "What is the primary endpoint of the Phase 3 pancreatic cancer trial NCT01360853?",
+    "ground_truth_answer": "NCT01360853 (ON 01910.Na vs. gemcitabine in metastatic pancreatic adenocarcinoma) measures survival as the primary endpoint at 18 months.",
+    "relevant_nct_ids": ["NCT01360853"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_019",
+    "category": "statistical",
+    "query": "What Phase 3 colorectal cancer trials are in the database and what are their primary endpoints?",
+    "ground_truth_answer": "Phase 3 colorectal cancer trials include: NCT00349076 (5-FU + oxaliplatin vs. 5-FU; disease-free survival at 3 years), NCT00893295 (informational intervention; CRC screening utilization over 6 months), and NCT02316535 (capecitabine; disease-free survival at 3 years).",
+    "relevant_nct_ids": ["NCT00349076", "NCT00893295", "NCT02316535"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_020",
+    "category": "statistical",
+    "query": "What is the primary outcome of the Phase 3 head and neck cancer trial NCT00608205 and when is it measured?",
+    "ground_truth_answer": "NCT00608205 (cisplatin + fluorouracil + radiation in head and neck cancer) measures relapse-free survival as the primary outcome at 2 years from start of study.",
+    "relevant_nct_ids": ["NCT00608205"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_021",
+    "category": "statistical",
+    "query": "What is the primary endpoint of the Phase 3 oropharyngeal squamous cell carcinoma trial NCT01874171?",
+    "ground_truth_answer": "NCT01874171 (cisplatin vs. cetuximab in oropharyngeal squamous cell carcinoma) measures severe acute and late toxicity (Grade 3-5) as the primary endpoint, up to 2 years after end of treatment.",
+    "relevant_nct_ids": ["NCT01874171"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_022",
+    "category": "statistical",
+    "query": "Which Phase 3 breast cancer trials in the database used a placebo comparator and what did they measure?",
+    "ground_truth_answer": "Phase 3 breast cancer trials with placebo include: NCT00005975 (megestrol acetate vs. placebo; hot flash effectiveness at 3-9 months), NCT00661102 (corticosteroids vs. placebo; hand-foot syndrome onset), NCT00775645 (acetyl-L-carnitine vs. placebo; FACT-Taxane neurotoxicity score at 12 weeks), and NCT00559858 (pyridoxine vs. placebo; capecitabine dose modifications).",
+    "relevant_nct_ids": ["NCT00005975", "NCT00661102", "NCT00775645", "NCT00559858"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_023",
+    "category": "statistical",
+    "query": "What is the primary outcome and timeframe for the Phase 3 prostate cancer trial NCT01394263?",
+    "ground_truth_answer": "NCT01394263 (histrelin hydrogel implant vs. Zoladex goserelin implant in prostate cancer) measures suppression of testosterone (percentage of patients with testosterone below 50 ng/dL) over 52 weeks.",
+    "relevant_nct_ids": ["NCT01394263"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_024",
+    "category": "statistical",
+    "query": "What does the Phase 3 multiple myeloma trial NCT02248428 measure as primary outcome?",
+    "ground_truth_answer": "NCT02248428 (clarithromycin + thalidomide in multiple myeloma) measures the percentage of participants achieving very good partial remission (VGPR) or better as the primary outcome, up to 4 months.",
+    "relevant_nct_ids": ["NCT02248428"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_025",
+    "category": "statistical",
+    "query": "What is the primary endpoint of the Phase 3 CLL trial NCT06970743?",
+    "ground_truth_answer": "NCT06970743 (BGB-16673 + bendamustine + rituximab in chronic lymphocytic leukemia) measures progression-free survival (PFS) by independent review committee (IRC) as the primary endpoint.",
+    "relevant_nct_ids": ["NCT06970743"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_026",
+    "category": "statistical",
+    "query": "What is the primary outcome of the Phase 3 AML trial NCT07232134?",
+    "ground_truth_answer": "NCT07232134 (cytarabine/idarubicin-based chemotherapy in AML) measures event-free survival as the primary outcome, measured up to 2 years.",
+    "relevant_nct_ids": ["NCT07232134"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_027",
+    "category": "statistical",
+    "query": "Which Phase 3 lung cancer trials used pembrolizumab and what were the primary outcomes?",
+    "ground_truth_answer": "NCT03867175 used pembrolizumab combined with stereotactic body radiation therapy in metastatic lung cancer, with the primary outcome being number of participants with progression-free survival (PFS) after combined treatment.",
+    "relevant_nct_ids": ["NCT03867175"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_028",
+    "category": "statistical",
+    "query": "What is the primary outcome and follow-up duration for the Phase 3 melanoma trial NCT04949113?",
+    "ground_truth_answer": "NCT04949113 (neoadjuvant ipilimumab + nivolumab vs. adjuvant nivolumab in Stage III malignant melanoma) measures comparison of event-free survival (EFS) in the neoadjuvant and adjuvant settings as the primary outcome.",
+    "relevant_nct_ids": ["NCT04949113"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_029",
+    "category": "statistical",
+    "query": "What Phase 3 trials in the database enrolled patients with advanced NSCLC and what primary endpoints did they use?",
+    "ground_truth_answer": "Phase 3 advanced NSCLC trials include: NCT03117335 (Sulijia vs. placebo; PFS up to 24 months), NCT03867175 (SBRT + pembrolizumab; PFS), and NCT01058902 (aspirin vs. no aspirin; survival at 5 years).",
+    "relevant_nct_ids": ["NCT03117335", "NCT03867175", "NCT01058902"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_030",
+    "category": "statistical",
+    "query": "What is the primary endpoint of the Phase 3 NSCLC trial NCT03117335?",
+    "ground_truth_answer": "NCT03117335 (Sulijia vs. placebo in advanced non-small cell lung cancer) measures progression-free survival (PFS) as the primary endpoint, assessed up to 24 months.",
+    "relevant_nct_ids": ["NCT03117335"],
+    "requires_table": true
+  },
+  {
+    "id": "saf_001",
+    "category": "safety",
+    "query": "Which Phase 3 trials measured adverse events as a primary outcome?",
+    "ground_truth_answer": "NCT00271414 (fentanyl TTS in chronic pain) measured incidence and severity of adverse events as primary outcome. NCT00662038 (pirfenidone in idiopathic pulmonary fibrosis) measured percentage of participants with adverse events over 7.5 years.",
+    "relevant_nct_ids": ["NCT00271414", "NCT00662038"],
+    "requires_table": true
+  },
+  {
+    "id": "saf_002",
+    "category": "safety",
+    "query": "What safety outcome does the Phase 3 idiopathic pulmonary fibrosis trial NCT00662038 primarily measure?",
+    "ground_truth_answer": "NCT00662038 (pirfenidone in idiopathic pulmonary fibrosis) measures percentage of participants with adverse events as the primary outcome over 7.5 years.",
+    "relevant_nct_ids": ["NCT00662038"],
+    "requires_table": true
+  },
+  {
+    "id": "saf_003",
+    "category": "safety",
+    "query": "What primary safety endpoint does NCT00685958 measure in the hip fracture trial?",
+    "ground_truth_answer": "NCT00685958 (enoxaparin in hip fractures) measures bleeding events as the primary safety outcome at 28 days.",
+    "relevant_nct_ids": ["NCT00685958"],
+    "requires_table": true
+  },
+  {
+    "id": "saf_004",
+    "category": "safety",
+    "query": "Which Phase 3 oncology trials measured toxicity Grade 3 or higher as a primary endpoint?",
+    "ground_truth_answer": "NCT01874171 (cisplatin vs. cetuximab in oropharyngeal squamous cell carcinoma) measures severe toxicity Grade 3-5 as primary endpoint up to 2 years after treatment.",
+    "relevant_nct_ids": ["NCT01874171"],
+    "requires_table": true
+  },
+  {
+    "id": "saf_005",
+    "category": "safety",
+    "query": "What is the primary safety outcome of Phase 3 trial NCT00430937 comparing daptomycin versus vancomycin?",
+    "ground_truth_answer": "NCT00430937 (daptomycin vs. vancomycin in skin and soft tissue infections) measures clinical success by comparing participants signs and symptoms at the test-of-cure visit (7-14 days after end of treatment) as the primary outcome.",
+    "relevant_nct_ids": ["NCT00430937"],
+    "requires_table": true
+  },
+  {
+    "id": "td_001",
+    "category": "trial_design",
+    "query": "What interventions were compared in the Phase 3 nasopharyngeal carcinoma trial NCT01540136?",
+    "ground_truth_answer": "NCT01540136 compared nedaplatin versus cisplatin as chemotherapy agents in patients with nasopharyngeal carcinoma, with progression-free survival as the primary endpoint over 2 years.",
+    "relevant_nct_ids": ["NCT01540136"],
+    "requires_table": false
+  },
+  {
+    "id": "td_002",
+    "category": "trial_design",
+    "query": "What is the design of Phase 3 trial NCT03737981 for chronic lymphocytic leukemia?",
+    "ground_truth_answer": "NCT03737981 is a Phase 3 trial in chronic lymphocytic leukemia comparing ibrutinib + obinutuzumab vs. observation activity, with venetoclax also included. Primary endpoint is progression-free survival (PFS) over 5 years.",
+    "relevant_nct_ids": ["NCT03737981"],
+    "requires_table": false
+  },
+  {
+    "id": "td_003",
+    "category": "trial_design",
+    "query": "Which Phase 3 trials compared immunotherapy combinations against standard chemotherapy in lung cancer?",
+    "ground_truth_answer": "NCT03867175 combined stereotactic body radiation therapy with pembrolizumab in metastatic lung cancer. NCT04012606 combined toripalimab (PD-1 inhibitor) with carboplatin/cisplatin + etoposide in small cell lung cancer.",
+    "relevant_nct_ids": ["NCT03867175", "NCT04012606"],
+    "requires_table": false
+  },
+  {
+    "id": "td_004",
+    "category": "trial_design",
+    "query": "What conditions were studied in Phase 3 trial NCT04949113 and what arms were compared?",
+    "ground_truth_answer": "NCT04949113 studied malignant melanoma Stage III. It compared neoadjuvant ipilimumab + nivolumab versus adjuvant nivolumab, with event-free survival (EFS) as the primary outcome.",
+    "relevant_nct_ids": ["NCT04949113"],
+    "requires_table": false
+  },
+  {
+    "id": "td_005",
+    "category": "trial_design",
+    "query": "What is the study design of Phase 3 trial NCT01876784 for thyroid cancer?",
+    "ground_truth_answer": "NCT01876784 is a Phase 3 randomized controlled trial in differentiated thyroid cancer comparing vandetanib (SAR390530) versus placebo. Primary endpoint is progression-free survival (PFS) from randomization until disease progression.",
+    "relevant_nct_ids": ["NCT01876784"],
+    "requires_table": false
+  },
+  {
+    "id": "gen_001",
+    "category": "general",
+    "query": "What is the role of pembrolizumab in Phase 3 lung cancer trials in the database?",
+    "ground_truth_answer": "In the database, pembrolizumab (a PD-1 immune checkpoint inhibitor) appears in NCT03867175, where it is combined with stereotactic body radiation therapy (SBRT) for metastatic lung cancer. The primary endpoint is progression-free survival (PFS).",
+    "relevant_nct_ids": ["NCT03867175"],
+    "requires_table": false
+  },
+  {
+    "id": "gen_002",
+    "category": "general",
+    "query": "What Phase 3 leukemia trials are present in the database?",
+    "ground_truth_answer": "Phase 3 leukemia trials in the database include: NCT00816049 (individualized vs. fixed 6-mercaptopurine in acute lymphoblastic leukemia; MRD-negative rate over 6 years), NCT03737981 (ibrutinib + obinutuzumab in CLL; PFS over 5 years), NCT06970743 (BGB-16673 + BR in CLL; PFS by IRC), and NCT07232134 (cytarabine/idarubicin-based regimens in AML; event-free survival up to 2 years).",
+    "relevant_nct_ids": ["NCT00816049", "NCT03737981", "NCT06970743", "NCT07232134"],
+    "requires_table": false
+  },
+  {
+    "id": "gen_003",
+    "category": "general",
+    "query": "Which Phase 3 trials in the database studied checkpoint inhibitor immunotherapy?",
+    "ground_truth_answer": "Checkpoint inhibitor trials include: NCT03867175 (pembrolizumab in metastatic lung cancer), NCT04012606 (toripalimab in small cell lung cancer), and NCT04949113 (ipilimumab + nivolumab in stage III melanoma).",
+    "relevant_nct_ids": ["NCT03867175", "NCT04012606", "NCT04949113"],
+    "requires_table": false
+  },
+  {
+    "id": "gen_004",
+    "category": "general",
+    "query": "What Phase 3 cancer trials measured disease-free survival (DFS) as the primary endpoint?",
+    "ground_truth_answer": "Phase 3 trials with disease-free survival as primary endpoint include: NCT00349076 (5-FU + oxaliplatin in rectal neoplasms; DFS at 3 years), NCT01740375 (esophagectomy in esophageal squamous cell carcinoma; 2-year DFS rate), and NCT02316535 (capecitabine in colorectal neoplasms; DFS at 3 years).",
+    "relevant_nct_ids": ["NCT00349076", "NCT01740375", "NCT02316535"],
+    "requires_table": false
+  },
+  {
+    "id": "gen_005",
+    "category": "general",
+    "query": "What chemotherapy regimens were tested in Phase 3 lung cancer trials in the database?",
+    "ground_truth_answer": "Phase 3 lung cancer chemotherapy trials include: NCT00003317 (carboplatin + paclitaxel + radiation + surgery), NCT00801736 (cisplatin + paclitaxel), and NCT01058902 (aspirin 75mg vs. no aspirin as adjunct in NSCLC). NCT03867175 combined SBRT with pembrolizumab immunotherapy.",
+    "relevant_nct_ids": ["NCT00003317", "NCT00801736", "NCT01058902", "NCT03867175"],
+    "requires_table": false
+  },
+  {
+    "id": "stat_049",
+    "category": "statistical",
+    "query": "What is the primary outcome of Phase 3 trial NCT05725343 studying canakinumab for lung cancer prevention?",
+    "ground_truth_answer": "NCT05725343 (canakinumab vs. placebo in lung cancer) measures time to lung cancer as the primary outcome, from the date of randomization.",
+    "relevant_nct_ids": ["NCT05725343"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_050",
+    "category": "statistical",
+    "query": "What is the primary endpoint of the Phase 3 bladder cancer trial NCT00033436?",
+    "ground_truth_answer": "NCT00033436 (niacinamide + carbogen + radiation therapy in bladder cancer) measures cystoscopic response at 6 months after initiation of radiotherapy as the primary endpoint.",
+    "relevant_nct_ids": ["NCT00033436"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_051",
+    "category": "statistical",
+    "query": "What is the primary outcome of the Phase 3 colorectal cancer trial NCT02316535 and what is the follow-up period?",
+    "ground_truth_answer": "NCT02316535 (capecitabine adjuvant chemotherapy in high-risk Stage II colorectal neoplasms) measures disease-free survival as the primary outcome at 3 years.",
+    "relevant_nct_ids": ["NCT02316535"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_052",
+    "category": "statistical",
+    "query": "What is the primary endpoint of the Phase 3 renal cell carcinoma trial NCT01582672 and which drugs were compared?",
+    "ground_truth_answer": "NCT01582672 compared AGS-003 (dendritic cell immunotherapy) versus standard treatment in advanced renal cell carcinoma. The primary endpoint is overall survival from date of subject randomization.",
+    "relevant_nct_ids": ["NCT01582672"],
+    "requires_table": true
+  },
+  {
+    "id": "stat_053",
+    "category": "statistical",
+    "query": "What Phase 3 trials used ibrutinib and what were the primary outcomes?",
+    "ground_truth_answer": "NCT03737981 used ibrutinib combined with obinutuzumab and venetoclax in chronic lymphocytic leukemia, with progression-free survival (PFS) over 5 years as the primary endpoint.",
+    "relevant_nct_ids": ["NCT03737981"],
+    "requires_table": true
+  }
+]

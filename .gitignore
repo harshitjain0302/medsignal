@@ -1,0 +1,24 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ruff_cache/
+dist/
+*.egg-info/
+
+# Large data files — cache raw API responses locally but don't commit
+data/
+
+# MLflow artifacts
+mlruns/
+mlflow.db
+
+# Eval results (large)
+eval/results/*.json
+
+# Model weights cache
+.cache/
+
+# Claude Code session files
+.claude/

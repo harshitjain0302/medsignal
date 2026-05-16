@@ -1,4 +1,4 @@
-# MedSignal — Clinical Trial Intelligence Agent
+# MedSignal - Clinical Trial Intelligence Agent
 
 A multi-agent RAG system for querying Phase 2/3 clinical trial data using natural language.
 Answers are grounded in ClinicalTrials.gov records with source citations, confidence scores,

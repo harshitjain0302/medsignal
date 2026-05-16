@@ -4,8 +4,6 @@ A multi-agent RAG system for querying Phase 2/3 clinical trial data using natura
 Answers are grounded in ClinicalTrials.gov records with source citations, confidence scores,
 and RAGAS faithfulness evaluation on every response.
 
-> Built as an AI engineering portfolio project targeting mid-level AI engineer roles (2026).
-
 ---
 
 ## What It Does

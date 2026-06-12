@@ -135,7 +135,7 @@ Three baselines over a 50-question golden set (hand-curated from real DB NCT IDs
 - **PubMed:** `ingestion/pubmed.py` built and tested (15 passing tests); deferred from bulk ingestion because NCBI Entrez throttles to ~45s/NCT ID → ~18h for 1,500 trials. Identified as primary quality improvement for v2.
 
 **Why 1,500 trials instead of 10,000:**
-8GB unified RAM on M-series Mac. BGE-M3 alone uses ~2.3GB MPS. Full pipeline (embedder + BM25 + TAPAS + BART) peaks at ~4.8GB. 1,500 trials with 3,081 chunks is sufficient to demonstrate retrieval quality and agent pipeline correctness; scaling to 10K requires either cloud GPU or PubMed-sourced richer text (not just protocol descriptions).
+BGE-M3 alone uses ~2.3GB MPS. Full pipeline (embedder + BM25 + TAPAS + BART) peaks at ~4.8GB. 1,500 trials with 3,081 chunks is sufficient to demonstrate retrieval quality and agent pipeline correctness; scaling to 10K requires either cloud GPU or PubMed-sourced richer text (not just protocol descriptions).
 
 ---
 
@@ -235,31 +235,6 @@ medsignal/
 - **Full system latency:** 61s in harness due to lazy HuggingFace model loading per query (4 models × ~15s cold load). The FastAPI server pre-warms BM25 at startup; production would pre-load all models. Warm latency is ~5–8s.
 - **TAPAS on protocol text:** TAPAS expects structured tables; ClinicalTrials.gov text is prose. TAPAS answers are NCT IDs extracted from chunk content rather than true table cells. Works as a retrieval signal, not a true table QA system without PubMed result tables.
 - **Router on harness:** `hybrid_rag` baseline shows 0% router accuracy because that baseline intentionally bypasses the router node. This is expected — not a bug.
-
----
-
-## Resume Metrics
-
-```
-• Hybrid retrieval (BGE-M3 + BM25 + RRF) achieved 27% P@5 and 70% hit rate vs 52% for 
-  semantic-only baseline, measured over 1,500 ClinicalTrials.gov Phase 2/3 oncology trials
-
-• RAGAS evaluation harness over 50-question hand-curated golden set; naive RAG faithfulness 
-  0.50 vs hybrid 0.29 — lower faithfulness reflects harder specific-NCT queries in hybrid 
-  sample, while hit rate improvement (+18pp) is the primary retrieval quality signal
-
-• Full MedSignal pipeline: Router (100% accuracy on statistical queries) → NER → hybrid 
-  retrieval → conditional TAPAS table QA → Groq synthesis → inline RAGAS faithfulness scoring
-
-• 6 HuggingFace task types in one system: dense retrieval (BGE-M3), zero-shot classification 
-  (BART-large-MNLI), table QA (TAPAS), biomedical NER (d4data/biomedical-ner-all), 
-  text generation (Llama 3.3 70B via Groq), faithfulness eval (Llama 3.1 8B via RAGAS)
-
-• MCP architecture: LangGraph agents call ClinicalTrials.gov and PubMed via FastMCP servers 
-  (stdio transport) — tools discoverable at runtime, data source swappable without agent changes
-
-• LangSmith tracing on every query + MLflow experiment tracking across 3 retrieval baselines
-```
 
 ---
 
